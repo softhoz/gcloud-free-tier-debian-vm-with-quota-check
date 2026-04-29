@@ -31,9 +31,19 @@ Every component sits inside its own free tier (Pub/Sub: 10 GB/mo, Cloud Function
 
 ## Quick start
 
+### Cloud Shell (one-liner)
+
+Open [Cloud Shell](https://console.cloud.google.com/cloudshell) and paste:
+
 ```bash
-git clone https://github.com/<your-user>/gcp-free-tier-guard.git
-cd gcp-free-tier-guard
+curl -fsSL https://github.com/softhoz/gcloud-free-tier-debian-vm-with-quota-check/archive/refs/heads/main.tar.gz | tar -xz && cd gcloud-free-tier-debian-vm-with-quota-check-main && bash setup.sh
+```
+
+### Local clone
+
+```bash
+git clone https://github.com/softhoz/gcloud-free-tier-debian-vm-with-quota-check.git
+cd gcloud-free-tier-debian-vm-with-quota-check
 chmod +x setup.sh
 ./setup.sh
 ```
